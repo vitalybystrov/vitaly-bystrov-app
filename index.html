@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#070707"><meta name="description" content="VITALY BYSTROV — photographer in Tbilisi, Georgia.">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg">
+<title>VITALY BYSTROV — Photographer</title>
+<style>
+:root{--bg:#070707;--fg:#f4f2ed;--muted:#aaa39a;--gold:#c9a96a;--line:#292929}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--fg);font-family:Arial,sans-serif}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}
+.nav{position:fixed;top:0;left:0;right:0;z-index:30;background:#070707ea;border-bottom:1px solid #222;backdrop-filter:blur(14px);display:flex;justify-content:space-between;align-items:center;padding:14px 5%}.brand{font-weight:700;letter-spacing:.2em}.brand small{display:block;color:var(--gold);font-size:9px;letter-spacing:.28em;margin-top:4px}.links{display:flex;gap:21px;text-transform:uppercase;font-size:10px;letter-spacing:.12em}.links a:hover{color:var(--gold)}
+main{padding-top:68px}section{max-width:1180px;margin:auto;padding:85px 5%}.hero{min-height:88vh;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.hero img{width:100%;height:min(700px,76vh);object-fit:cover}.gold{color:var(--gold);font-size:10px;letter-spacing:.3em;text-transform:uppercase}.hero h1{font-size:clamp(44px,7vw,86px);line-height:.94;letter-spacing:-.05em;margin:18px 0 25px}.quote{font:25px Georgia,serif;line-height:1.4}.copy{color:#c2beb7;line-height:1.75;font-size:16px}.btn{display:inline-block;border:1px solid var(--gold);color:var(--gold);background:none;padding:14px 20px;margin-top:15px;text-transform:uppercase;font-size:10px;letter-spacing:.15em;cursor:pointer}.btn:hover{background:var(--gold);color:#070707}
+.head{border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:30px}.head h2{font-size:40px;margin:10px 0}.head p{color:var(--muted);line-height:1.65;max-width:700px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.tile{position:relative;overflow:hidden;height:370px;cursor:pointer}.tile img{width:100%;height:100%;object-fit:cover;transition:.5s}.tile:hover img{transform:scale(1.04)}.label{position:absolute;left:18px;bottom:17px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;text-shadow:0 2px 14px #000}
+.about{display:grid;grid-template-columns:.85fr 1.15fr;gap:55px;align-items:center}.about img{width:100%;max-height:620px;object-fit:cover}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{border:1px solid var(--line);padding:28px;background:#101010}.card h3{margin:0}.price{font-size:30px;color:var(--gold);margin:18px 0}.card p{color:var(--muted);line-height:1.6}
+.booking,.clientbox{border:1px solid var(--line);padding:32px;background:#0d0d0d}.booking-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{background:#111;border:1px solid #303030;color:#eee;padding:15px;width:100%;outline:none}.field:focus{border-color:var(--gold)}textarea.field{min-height:120px;resize:vertical}.full{grid-column:1/-1}.status{color:var(--gold);font-size:12px;margin-top:14px;min-height:18px}.clientbox{text-align:center}.clientbox p{color:var(--muted)}.client-gallery{display:none;margin-top:25px}.client-gallery.show{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.client-gallery img{width:100%;height:230px;object-fit:cover;cursor:pointer}
+.install{display:none;position:fixed;right:18px;bottom:82px;z-index:35;background:#111;border:1px solid var(--gold);padding:14px 17px;color:var(--gold);font-size:10px;text-transform:uppercase;letter-spacing:.1em}.install.show{display:block}.contact{border:1px solid var(--line);text-align:center;padding:45px}.contact h2{font-size:42px;margin:12px 0}
+footer{text-align:center;border-top:1px solid var(--line);padding:35px;color:#777;font-size:10px;letter-spacing:.1em}.bottom{display:none}.lightbox{position:fixed;inset:0;background:#000e;z-index:100;display:none;align-items:center;justify-content:center;padding:20px}.lightbox.open{display:flex}.lightbox img{max-width:94vw;max-height:88vh;object-fit:contain}.close{position:absolute;right:25px;top:18px;color:#fff;background:none;border:0;font-size:32px;cursor:pointer}
+@media(max-width:800px){.links{display:none}.hero,.about,.cards,.grid,.booking-grid{grid-template-columns:1fr}.hero{min-height:auto;padding-top:40px}.hero img{order:-1;height:64vh}.tile{height:270px}.full{grid-column:auto}.client-gallery.show{grid-template-columns:1fr 1fr}.client-gallery img{height:160px}.contact{padding:30px 18px}.contact h2{font-size:32px}.bottom{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:40;background:#070707f3;border-top:1px solid #222;justify-content:space-around;padding:10px 2px calc(10px + env(safe-area-inset-bottom));backdrop-filter:blur(14px)}.bottom a{font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:#bbb}.bottom a:first-child{color:var(--gold)}main{padding-bottom:60px}}
+</style>
+</head>
+<body>
+<nav class="nav"><a class="brand" href="#home">VITALY BYSTROV<small>PHOTOGRAPHER · TBILISI</small></a>
+<div class="links"><a href="#portfolio">Portfolio</a><a href="#about">About</a><a href="#pricing">Prices</a><a href="#booking">Booking</a><a href="#clients">Clients</a><a href="#contact">Contact</a></div></nav>
+
+<main>
+<section class="hero" id="home"><div><div class="gold">VITALY BYSTROV · TBILISI</div><h1>Photography<br>with emotion.</h1><div class="quote">«Я фотографирую не моменты — я сохраняю эмоции.»</div><p class="copy">Портреты, fashion, street и lifestyle-фотография. Живые лица, естественный свет и истории, которые хочется сохранить.</p><a class="btn" href="#booking">Записаться на съёмку</a></div>
+<img src="https://images-pw.pixieset.com/elementfield/x790xlo/3333333-0583c2da-1500.jpg" alt="VITALY BYSTROV"></section>
+
+<section id="portfolio"><div class="head"><div class="gold">Portfolio</div><h2>Мой взгляд</h2><p>Настоящие люди. Настоящие эмоции. Настоящие истории.</p></div>
+<div class="grid">
+<div class="tile" onclick="openLightbox(this.querySelector('img').src)"><img src="https://images-pw.pixieset.com/elementfield/v1XqeV9/208285a3-ccd7-4a13-b6b1-e313cf795e3f-c0400374-1500.png" alt="Models"><span class="label">Models</span></div>
+<div class="tile" onclick="openLightbox(this.querySelector('img').src)"><img src="https://images-pw.pixieset.com/elementfield/PvE74ly/photo_2026-09-19_01-31-44-5b0ebc0a-1500.jpg" alt="Portraits"><span class="label">Portraits</span></div>
+<div class="tile" onclick="openLightbox(this.querySelector('img').src)"><img src="https://images-pw.pixieset.com/elementfield/bLOqQP8/ChatGPTImage19sent.2026g.23_10_05-baaa8b3c-1500.png" alt="Street Photo"><span class="label">Street Photo</span></div>
+<div class="tile" onclick="openLightbox(this.querySelector('img').src)"><img src="https://images-pw.pixieset.com/elementfield/bLOqQP8/ChatGPTImage19sent.2026g.23_10_05-baaa8b3c-1500.png" alt="Landscape"><span class="label">Landscape</span></div>
+</div></section>
+
+<section id="about"><div class="about"><img src="https://images-pw.pixieset.com/elementfield/bLOqQP8/ChatGPTImage19sent.2026g.23_10_05-baaa8b3c-1500.png" alt="VITALY BYSTROV with camera"><div><div class="gold">About</div><h2>Человек с объективом.</h2><p class="copy">Меня зовут Виталий. Живу и работаю в Тбилиси, Грузия.</p><p class="copy">Мне важны естественность, характер и свет. Я хочу создать кадр, в котором человек узнаёт себя.</p><a class="btn" href="https://vitalibystrov.mypixieset.com/about/">Подробнее обо мне</a></div></div></section>
+
+<section id="pricing"><div class="head"><div class="gold">Photography Packages</div><h2>Цены</h2><p>Съёмки в Тбилиси и творческие проекты.</p></div><div class="cards">
+<div class="card"><h3>BASIC</h3><div class="price">180 ₾</div><p>До 1 часа<br>До 15 обработанных фотографий</p></div>
+<div class="card"><h3>BUSINESS</h3><div class="price">300 ₾</div><p>До 2 часов<br>До 35 обработанных фотографий</p></div>
+<div class="card"><h3>PREMIUM</h3><div class="price">500 ₾</div><p>До 4 часов<br>До 70 обработанных фотографий</p></div></div></section>
+
+<section id="booking"><div class="head"><div class="gold">Booking</div><h2>Запись на съёмку</h2><p>Заявка формируется прямо в приложении.</p></div><div class="booking"><div class="booking-grid">
+<input id="name" class="field" placeholder="Ваше имя"><input id="contactInfo" class="field" placeholder="Телефон / Instagram">
+<select id="type" class="field"><option>Портрет</option><option>Fashion / Model</option><option>Street</option><option>Family</option><option>Creative project</option></select><input id="date" type="date" class="field">
+<textarea id="message" class="field full" placeholder="Расскажите коротко о съёмке"></textarea></div>
+<button class="btn" onclick="makeBooking()">Подготовить заявку</button><button class="btn" style="margin-left:8px" onclick="sendTelegram()">Открыть Telegram</button><div id="status" class="status"></div></div></section>
+
+<section id="clients"><div class="head"><div class="gold">Private Client Gallery</div><h2>Моя галерея</h2><p>Закрытый раздел для клиентов. В рабочей версии код будет выдаваться после съёмки.</p></div>
+<div class="clientbox"><input id="galleryCode" class="field" style="max-width:360px" placeholder="Введите код доступа"><br><button class="btn" onclick="unlockGallery()">Открыть галерею</button><div id="galleryStatus" class="status"></div>
+<div class="client-gallery" id="clientGallery">
+<img onclick="openLightbox(this.src)" src="https://images-pw.pixieset.com/elementfield/x790xlo/3333333-0583c2da-1500.jpg" alt="Client photo">
+<img onclick="openLightbox(this.src)" src="https://images-pw.pixieset.com/elementfield/v1XqeV9/208285a3-ccd7-4a13-b6b1-e313cf795e3f-c0400374-1500.png" alt="Client photo">
+<img onclick="openLightbox(this.src)" src="https://images-pw.pixieset.com/elementfield/PvE74ly/photo_2026-09-19_01-31-44-5b0ebc0a-1500.jpg" alt="Client photo">
+</div></div></section>
+
+<section id="contact"><div class="contact"><div class="gold">Contact</div><h2>Создадим ваш кадр.</h2><p class="copy">Давайте создадим фотографии, которые останутся с вами надолго.</p><a class="btn" href="https://vitalibystrov.mypixieset.com/contact/">Контакты</a><p style="color:#777;font-size:12px;margin-top:25px">Instagram: @vitaly_bistr.off</p></div></section>
+</main>
+
+<nav class="bottom"><a href="#home">Главная</a><a href="#portfolio">Фото</a><a href="#pricing">Цены</a><a href="#booking">Запись</a><a href="#clients">Галерея</a></nav>
+<footer>© 2026 VITALY BYSTROV · PHOTOGRAPHER · TBILISI, GEORGIA</footer>
+<button id="install" class="install">Установить приложение</button>
+<div class="lightbox" id="lightbox" onclick="closeLightbox()"><button class="close">×</button><img id="lightboxImg" alt=""></div>
+
+<script>
+let bookingText='';
+let deferredPrompt=null;
+window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e;document.getElementById('install').classList.add('show')});
+document.getElementById('install').onclick=async()=>{if(deferredPrompt){deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null;document.getElementById('install').classList.remove('show')}};
+function openLightbox(src){event?.stopPropagation();document.getElementById('lightboxImg').src=src;document.getElementById('lightbox').classList.add('open')}
+function closeLightbox(){document.getElementById('lightbox').classList.remove('open')}
+function makeBooking(){
+ const n=name.value.trim(),c=contactInfo.value.trim(),t=type.value,d=date.value,m=message.value.trim();
+ if(!n||!c){status.textContent='Укажите имя и способ связи.';return}
+ bookingText=`Здравствуйте! Я хочу записаться на фотосъёмку.\n\nИмя: ${n}\nКонтакт: ${c}\nСъёмка: ${t}\nДата: ${d||'не указана'}\n\n${m}`;
+ navigator.clipboard?.writeText(bookingText).catch(()=>{});
+ status.textContent='Заявка сформирована и скопирована. Нажмите «Открыть Telegram» или вставьте текст вручную.';
+}
+function sendTelegram(){
+ if(!bookingText) makeBooking();
+ // Замените @YOUR_TELEGRAM на ваш реальный username перед публикацией.
+ const username='YOUR_TELEGRAM';
+ if(username==='YOUR_TELEGRAM'){status.textContent='Telegram-кнопка готова. Перед публикацией укажите ваш @username в коде приложения.';return}
+ location.href='https://t.me/'+username+'?text='+encodeURIComponent(bookingText);
+}
+function unlockGallery(){
+ const code=document.getElementById('galleryCode').value.trim();
+ if(code==='2026'){document.getElementById('clientGallery').classList.add('show');document.getElementById('galleryStatus').textContent='Доступ открыт — демонстрационная галерея.'}
+ else document.getElementById('galleryStatus').textContent='Неверный код.';
+}
+if('serviceWorker'in navigator)navigator.serviceWorker.register('./sw.js').catch(()=>{});
+</script>
+</body></html>
