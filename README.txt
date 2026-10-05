@@ -1,12 +1,10 @@
-VITALY BYSTROV APP v3
+VITALY BYSTROV — CINEMATIC MINIMAL V55
 
-Added:
-- Private Client Gallery demo with access code 2026
-- Install App button using browser PWA install prompt
-- Booking form + prepared message
-- Telegram integration placeholder (replace YOUR_TELEGRAM)
-- Fullscreen image viewer
-- Mobile navigation
-- PWA manifest/service worker
+Dark cinematic + minimalist editorial redesign.
+The structure stays clean and restrained, while the visual atmosphere is cinematic: dark tones, subtle film-like contrast, restrained warm-gold accents, large typography, thin lines and generous negative space.
 
-Important: the Client Gallery is a front-end demo, not real security. A production private gallery must use server-side authentication or Pixieset client-gallery links.
+Existing navigation, content and photography are preserved.
+Portfolio photographs are never forced into cropped cover boxes.
+External cinematic background images remain separate from the user's portfolio photos.
+
+Open index.html in a browser. External Pixieset image URLs remain external by design.
